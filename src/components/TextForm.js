@@ -50,7 +50,7 @@ const handleExtraSpaces =()=>{
   showAlert("Remove Extra Spaces!","success");
 }
   
-  const [text,setText] = useState('Enter text here');
+  const [text,setText] = useState('');
   // setText("kfdjdhdj");
   return (
     <>
@@ -58,7 +58,7 @@ const handleExtraSpaces =()=>{
     <div className='contanier' style={{color:props.mode==='dark'?'white':'#1c293e'}}>
     <h1>Enter the text to analyze</h1>
     <div className="mb-3">
-   <textarea className="form-control" value={text} style={{backgroundColor:props.mode==='dark'?'#484141':'white',color:props.mode==='dark'?'white':'#1c293e'}} onChange={handleOnChange} id="myBox" rows="8"></textarea>
+   <textarea placeholder='Enter text here' className="form-control" value={text} style={{backgroundColor:props.mode==='dark'?'#484141':'white',color:props.mode==='dark'?'white':'#1c293e'}} onChange={handleOnChange} id="myBox" rows="8"></textarea>
    </div>
 
    </div>
